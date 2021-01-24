@@ -9,11 +9,24 @@
 # ...
   imports = [
     (import (fetchTarball {
-      url = "https://github.com/TawasalMessenger/aerospike-flake/archive/ef36ea8f31885e051885c1d3a18dacc387f30f4d.tar.gz";
-      sha256 = "0s26i28zarr15ss0nqmj5050ikg5khwmyrxc08rr4r6rz9wd2ckz";
+      url = "https://github.com/TawasalMessenger/aerospike-flake/archive/150b100772ede1de5e81bfe7db3d7f57986748ca.tar.gz";
+      sha256 = "004crn1c9x1dxchw790ylfbvslynpsnkyzlr04slw2fhh5c03pys";
     })).nixosModule
   ];
   services.aerospike.enable = true;
+
+  # Only this version supports `submodules` attribute for fetchTree
+  nix.package = with pkgs; nixUnstable.overrideAttrs (_: {
+    name = "nix-2.4";
+    suffix = "";
+    src = fetchFromGitHub {
+      owner = "NixOS";
+      repo = "nix";
+      rev = "b7bfc7ee52dd425e0156f369eb4c05a62358f912";
+      sha256 = "WCUtN3ICisLlSRDk4Tgl9Gh7+74TuNGsAXwKHpm3uVg=";
+    };
+    patches = [ ];
+  });
 # ...
 }
 ```
