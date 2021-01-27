@@ -31,7 +31,6 @@ with lib; mkIf cfg.enable {
     "net.core.rmem_max" = mkDefault 15728640;
     "net.core.wmem_max" = mkDefault 5242880;
   };
-  services.aerospike.package = pkgs.aerospike-server;
   systemd = {
     tmpfiles.rules = [
       "d '${cfg.workDir}' 0700 aerospike aerospike - -"

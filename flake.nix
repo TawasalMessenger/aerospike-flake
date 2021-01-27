@@ -46,7 +46,7 @@
         program = "${drv.pname or drv.name}${drv.passthru.exePath}";
       };
     in
-    with derivations; rec {
+    with pkgs; with derivations; rec {
       packages.${system} = derivations;
       defaultPackage.${system} = aerospike-server;
       apps.${system} = {
@@ -55,13 +55,14 @@
         aerospike-tools-backup = mkApp { drv = aerospike-tools-backup; };
       };
       defaultApp.${system} = apps.aerospike-server;
-      legacyPackages.${system} = pkgs.extend overlay;
-      devShell.${system} = pkgs.callPackage ./shell.nix derivations;
+      legacyPackages.${system} = extend overlay;
+      devShell.${system} = callPackage ./shell.nix derivations;
       nixosModule = {
         imports = [
           ./configuration.nix
         ];
         nixpkgs.overlays = [ overlay ];
+        services.aerospike.package = lib.mkDefault aerospike-server;
       };
       overlay = final: prev: derivations;
     };
