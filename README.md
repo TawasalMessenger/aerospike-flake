@@ -9,8 +9,8 @@
 # ...
   imports = [
     (import (fetchTarball {
-      url = "https://github.com/TawasalMessenger/aerospike-flake/archive/5.4.0.2-1.tar.gz";
-      sha256 = "05891pcyxk233w4dvczjjf0aypmxnkv8w7vi8gjdjlwcgzcs8ym4";
+      url = "https://github.com/TawasalMessenger/aerospike-flake/archive/5.5.0.3-1.tar.gz";
+      sha256 = "16xvmr8jjgjz4ivh7bwz8780768dhmcwxz4v9a0jds2vphb9wpq4";
     })).nixosModule
   ];
   services.aerospike.enable = true;
