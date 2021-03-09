@@ -1,4 +1,4 @@
-{ config, lib, pkgs, ... }:
+{ config, pkgs, ... }:
 let
   cfg = config.services.aerospike;
   aerospikeConf = pkgs.writeText "aerospike.conf" ''
@@ -24,7 +24,7 @@ let
     ${cfg.extraConfig}
   '';
 in
-with lib; mkIf cfg.enable {
+with pkgs.lib; mkIf cfg.enable {
   boot.kernel.sysctl = {
     "kernel.shmall" = mkDefault 4294967296;
     "kernel.shmmax" = mkDefault 1073741824;
@@ -38,12 +38,12 @@ with lib; mkIf cfg.enable {
     services.aerospike = {
       serviceConfig = {
         Restart = "always";
-        RestartSec = lib.mkOverride 0 1;
+        RestartSec = mkOverride 0 1;
         LimitNOFILE = mkDefault 1048576;
 
         ReadWriteDirectories = cfg.workDir;
-        ExecStart = lib.mkForce "${cfg.package}/bin/asd --foreground --config-file ${aerospikeConf}";
-        preStart = lib.mkForce "";
+        ExecStart = mkForce "${cfg.package}/bin/asd --foreground --config-file ${aerospikeConf}";
+        preStart = mkForce "";
 
         AmbientCapabilities = [ "CAP_NET_BIND_SERVICE" ];
         CapabilityBoundingSet = [ "CAP_NET_BIND_SERVICE" ];

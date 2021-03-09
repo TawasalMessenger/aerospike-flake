@@ -10,12 +10,12 @@
     client-c-src = {
       type = "git";
       url = "https://github.com/aerospike/aerospike-client-c";
-      ref = "refs/tags/5.0.3";
+      ref = "refs/tags/5.1.0";
       submodules = true;
       flake = false;
     };
     admin-src = {
-      url = "github:aerospike/aerospike-admin/2.0.1";
+      url = "github:aerospike/aerospike-admin/2.1.1";
       flake = false;
     };
     tools-backup-src = {
@@ -25,7 +25,7 @@
     src = {
       type = "git";
       url = "https://github.com/aerospike/aerospike-server";
-      ref = "refs/tags/5.4.0.2";
+      ref = "refs/tags/5.5.0.3";
       submodules = true;
       flake = false;
     };
