@@ -24,7 +24,7 @@ let
     ${cfg.extraConfig}
   '';
 in
-with pkgs.lib; with lib; mkIf cfg.enable {
+with lib; mkIf cfg.enable {
   boot.kernel.sysctl = {
     "kernel.shmall" = mkDefault 4294967296;
     "kernel.shmmax" = mkDefault 1073741824;
