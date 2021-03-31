@@ -25,7 +25,7 @@
     src = {
       type = "git";
       url = "https://github.com/aerospike/aerospike-server";
-      ref = "refs/tags/5.5.0.3";
+      ref = "refs/tags/5.5.0.7";
       submodules = true;
       flake = false;
     };
@@ -41,26 +41,14 @@
         inherit pkgs client-c-src admin-src tools-backup-src src;
         version = lib.last (split "/" sources.src.original.ref);
       };
-      mkApp = drv: {
-        type = "app";
-        program = "${drv.pname or drv.name}${drv.passthru.exePath}";
-      };
     in
     with pkgs; with derivations; rec {
       packages.${system} = derivations;
       defaultPackage.${system} = aerospike-server;
-      apps.${system} = {
-        aerospike-server = mkApp { drv = aerospike-server; };
-        aerospike-admin = mkApp { drv = aerospike-admin; };
-        aerospike-tools-backup = mkApp { drv = aerospike-tools-backup; };
-      };
-      defaultApp.${system} = apps.aerospike-server;
       legacyPackages.${system} = extend overlay;
       devShell.${system} = callPackage ./shell.nix derivations;
       nixosModule = {
-        imports = [
-          ./configuration.nix
-        ];
+        imports = [ ./configuration.nix ];
         nixpkgs.overlays = [ overlay ];
         services.aerospike.package = lib.mkDefault aerospike-server;
       };

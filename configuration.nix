@@ -12,7 +12,7 @@ let
     }
     logging {
       console {
-        context any info
+        context any warning
       }
     }
     mod-lua {

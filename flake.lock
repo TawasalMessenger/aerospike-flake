@@ -55,11 +55,11 @@
     },
     "nixpkgs": {
       "locked": {
-        "lastModified": 1614792312,
-        "narHash": "sha256-LSUtjvYOxcSP1ewymGYp4AawiWDISKZHuCTxsaXir4k=",
+        "lastModified": 1616670887,
+        "narHash": "sha256-wn+l9qJfR5sj5Gq4DheJHAcBDfOs9K2p9seW2f35xzs=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "a2b0ea6865b2346ceb015259c76e111dcca039c5",
+        "rev": "c0e881852006b132236cbf0301bd1939bb50867e",
         "type": "github"
       },
       "original": {
@@ -82,17 +82,17 @@
     "src": {
       "flake": false,
       "locked": {
-        "lastModified": 1612983913,
-        "narHash": "sha256-+rrZpLMfoXFTaq5zz0Bf8RymA2iwTlNBNcBDW2kMMwA=",
-        "ref": "refs/tags/5.5.0.3",
-        "rev": "9bfdf30cb8e9e2e0e2108ba1e7b2a8f066930d9d",
-        "revCount": 805,
+        "lastModified": 1616776648,
+        "narHash": "sha256-KXzANsmtE2gTyzqQ593w3Arc7PSae85UjSMsXT4tWHA=",
+        "ref": "refs/tags/5.5.0.7",
+        "rev": "c75f27541180922568156f6a59d31d2425161a02",
+        "revCount": 814,
         "submodules": true,
         "type": "git",
         "url": "https://github.com/aerospike/aerospike-server"
       },
       "original": {
-        "ref": "refs/tags/5.5.0.3",
+        "ref": "refs/tags/5.5.0.7",
         "submodules": true,
         "type": "git",
         "url": "https://github.com/aerospike/aerospike-server"
