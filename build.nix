@@ -59,7 +59,7 @@ in
     src = tools-backup-src;
 
     nativeBuildInputs = [ autoconf automake libtool ];
-    buildInputs = [ openssl zlib ];
+    buildInputs = [ openssl zlib zstd ];
 
     preBuild = "export CLIENTREPO=${client}/src";
 
