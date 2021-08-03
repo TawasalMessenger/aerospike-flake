@@ -3,10 +3,6 @@
 
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
-    flake-compat = {
-      url = "github:TimothyKlim/flake-compat/0eb07ce2c5fc1a104d77dcc073806b39f7defc78";
-      flake = false;
-    };
     client-c-src = {
       type = "git";
       url = "https://github.com/aerospike/aerospike-client-c";
@@ -31,7 +27,7 @@
     };
   };
 
-  outputs = { self, nixpkgs, flake-compat, client-c-src, admin-src, tools-backup-src, src }:
+  outputs = { self, nixpkgs, client-c-src, admin-src, tools-backup-src, src }:
     with builtins;
     let
       sources = (fromJSON (readFile ./flake.lock)).nodes;

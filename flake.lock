@@ -36,23 +36,6 @@
         "url": "https://github.com/aerospike/aerospike-client-c"
       }
     },
-    "flake-compat": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1611479733,
-        "narHash": "sha256-8K/ZQfAODlPhbWQTN2sy/HWyppC5MeAuVb/uHOO8oS0=",
-        "owner": "TimothyKlim",
-        "repo": "flake-compat",
-        "rev": "0eb07ce2c5fc1a104d77dcc073806b39f7defc78",
-        "type": "github"
-      },
-      "original": {
-        "owner": "TimothyKlim",
-        "repo": "flake-compat",
-        "rev": "0eb07ce2c5fc1a104d77dcc073806b39f7defc78",
-        "type": "github"
-      }
-    },
     "nixpkgs": {
       "locked": {
         "lastModified": 1627857416,
@@ -73,7 +56,6 @@
       "inputs": {
         "admin-src": "admin-src",
         "client-c-src": "client-c-src",
-        "flake-compat": "flake-compat",
         "nixpkgs": "nixpkgs",
         "src": "src",
         "tools-backup-src": "tools-backup-src"

@@ -43,7 +43,7 @@ with lib; mkIf cfg.enable {
 
         ReadWriteDirectories = cfg.workDir;
         ExecStart = mkForce "${cfg.package}/bin/asd --foreground --config-file ${aerospikeConf}";
-        preStart = mkForce "";
+        # ExecPreStart = mkForce "";
 
         AmbientCapabilities = [ "CAP_NET_BIND_SERVICE" ];
         CapabilityBoundingSet = [ "CAP_NET_BIND_SERVICE" ];
