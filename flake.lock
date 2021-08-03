@@ -3,16 +3,16 @@
     "admin-src": {
       "flake": false,
       "locked": {
-        "lastModified": 1614382972,
-        "narHash": "sha256-cy1PKYy9vj8yKO6d962ugc9V74V44V61uwqn+6iaZbY=",
+        "lastModified": 1620244228,
+        "narHash": "sha256-c+aM3AZZA3x6j3Zk2Hwxe0WyFWsPhhDbOw8vxMr4jhc=",
         "owner": "aerospike",
         "repo": "aerospike-admin",
-        "rev": "afb3071111e455a8770f3cfb6a39b71c9c3271b8",
+        "rev": "3ce721bbd249eca73046345620941a6aef325589",
         "type": "github"
       },
       "original": {
         "owner": "aerospike",
-        "ref": "2.1.1",
+        "ref": "2.2.0",
         "repo": "aerospike-admin",
         "type": "github"
       }
@@ -20,17 +20,17 @@
     "client-c-src": {
       "flake": false,
       "locked": {
-        "lastModified": 1612551984,
-        "narHash": "sha256-/XHSPECEtGq8M8VnBqt6WS9oxa7offwPIkcbi0mo6WE=",
-        "ref": "refs/tags/5.1.0",
-        "rev": "2ea19da5269e1e04e40a616bc0e6aa1ab19cb809",
-        "revCount": 3264,
+        "lastModified": 1627319686,
+        "narHash": "sha256-0+RZGgEISuvDcbu7z+tg9R2oBiqZDFBbVn7oeFzw49s=",
+        "ref": "refs/tags/5.2.2",
+        "rev": "12bbd843b141c48c3b543aa1d60f1a84479adfee",
+        "revCount": 3300,
         "submodules": true,
         "type": "git",
         "url": "https://github.com/aerospike/aerospike-client-c"
       },
       "original": {
-        "ref": "refs/tags/5.1.0",
+        "ref": "refs/tags/5.2.2",
         "submodules": true,
         "type": "git",
         "url": "https://github.com/aerospike/aerospike-client-c"
@@ -55,16 +55,16 @@
     },
     "nixpkgs": {
       "locked": {
-        "lastModified": 1616670887,
-        "narHash": "sha256-wn+l9qJfR5sj5Gq4DheJHAcBDfOs9K2p9seW2f35xzs=",
+        "lastModified": 1627857416,
+        "narHash": "sha256-AV0MsFVzbWI2MZbJ2j0kc8ooFLGSCZHuM9ipaWR9ds4=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "c0e881852006b132236cbf0301bd1939bb50867e",
+        "rev": "aaf9676fbb7fb4570216ca1e189a3dc769d62c45",
         "type": "github"
       },
       "original": {
         "owner": "NixOS",
-        "ref": "nixpkgs-unstable",
+        "ref": "nixos-unstable",
         "repo": "nixpkgs",
         "type": "github"
       }
@@ -82,17 +82,17 @@
     "src": {
       "flake": false,
       "locked": {
-        "lastModified": 1616776648,
-        "narHash": "sha256-KXzANsmtE2gTyzqQ593w3Arc7PSae85UjSMsXT4tWHA=",
-        "ref": "refs/tags/5.5.0.7",
-        "rev": "c75f27541180922568156f6a59d31d2425161a02",
-        "revCount": 814,
+        "lastModified": 1626823167,
+        "narHash": "sha256-BCE52IvP+BSocgr7GB/1qAtnfq8Rgm7IrM381fz6UeU=",
+        "ref": "refs/tags/5.6.0.9",
+        "rev": "edb240daa6e7aa49739a4d52676c254818c38a86",
+        "revCount": 872,
         "submodules": true,
         "type": "git",
         "url": "https://github.com/aerospike/aerospike-server"
       },
       "original": {
-        "ref": "refs/tags/5.5.0.7",
+        "ref": "refs/tags/5.6.0.9",
         "submodules": true,
         "type": "git",
         "url": "https://github.com/aerospike/aerospike-server"
@@ -101,16 +101,16 @@
     "tools-backup-src": {
       "flake": false,
       "locked": {
-        "lastModified": 1603405386,
-        "narHash": "sha256-hRjqBneUD3UEXs2RQLqc4VhJ1ITmgQH3NzWWtqOxj7s=",
+        "lastModified": 1620255391,
+        "narHash": "sha256-cHptrI/b5ueXx94mucHkde1JOzeOFF+RoKTIf6q4xHE=",
         "owner": "aerospike",
         "repo": "aerospike-tools-backup",
-        "rev": "2a70cc1c477fee948a3d7125d7e6fad915261d55",
+        "rev": "8690e69cca2ad8b2bfcc998678fd8dffdc195fea",
         "type": "github"
       },
       "original": {
         "owner": "aerospike",
-        "ref": "3.5.0",
+        "ref": "3.6.1",
         "repo": "aerospike-tools-backup",
         "type": "github"
       }
