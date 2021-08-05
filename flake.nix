@@ -2,7 +2,7 @@
   description = "Aerospike NoSQL Database flake";
 
   inputs = {
-    nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
+    nixpkgs.url = "github:NixOS/nixpkgs/staging-21.05";
     client-c-src = {
       type = "git";
       url = "https://github.com/aerospike/aerospike-client-c";
