@@ -6,23 +6,23 @@
     client-c-src = {
       type = "git";
       url = "https://github.com/aerospike/aerospike-client-c";
-      ref = "refs/tags/5.2.2";
       submodules = true;
+      ref = "refs/tags/5.2.4";
       flake = false;
     };
     admin-src = {
-      url = "github:aerospike/aerospike-admin/2.2.0";
+      url = "github:aerospike/aerospike-admin/2.4.0";
       flake = false;
     };
     tools-backup-src = {
-      url = "github:aerospike/aerospike-tools-backup/3.6.1";
+      url = "github:aerospike/aerospike-tools-backup/3.8.0";
       flake = false;
     };
     src = {
       type = "git";
       url = "https://github.com/aerospike/aerospike-server";
-      ref = "refs/tags/5.6.0.9";
       submodules = true;
+      ref = "refs/tags/5.7.0.7";
       flake = false;
     };
   };
