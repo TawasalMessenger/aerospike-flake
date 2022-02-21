@@ -2,27 +2,27 @@
   description = "Aerospike NoSQL Database flake";
 
   inputs = {
-    nixpkgs.url = "github:NixOS/nixpkgs/staging-21.05";
+    nixpkgs.url = "github:NixOS/nixpkgs/nixos-21.11";
     client-c-src = {
       type = "git";
       url = "https://github.com/aerospike/aerospike-client-c";
       submodules = true;
-      ref = "refs/tags/5.2.4";
+      ref = "refs/tags/5.2.7";
       flake = false;
     };
     admin-src = {
-      url = "github:aerospike/aerospike-admin/2.4.0";
+      url = "github:aerospike/aerospike-admin/2.6.0";
       flake = false;
     };
     tools-backup-src = {
-      url = "github:aerospike/aerospike-tools-backup/3.8.0";
+      url = "github:aerospike/aerospike-tools-backup/3.9.0";
       flake = false;
     };
     src = {
       type = "git";
       url = "https://github.com/aerospike/aerospike-server";
       submodules = true;
-      ref = "refs/tags/5.7.0.7";
+      ref = "refs/tags/5.7.0.10";
       flake = false;
     };
   };
