@@ -64,17 +64,17 @@
     "src": {
       "flake": false,
       "locked": {
-        "lastModified": 1641410888,
-        "narHash": "sha256-lgfkexoR3FXJsHMzDweaMsijn06bk8EOVVOoM7Y02v4=",
-        "ref": "refs/tags/5.7.0.10",
-        "rev": "3bda6680a8008920993915ebceaecb255b39a64d",
-        "revCount": 981,
+        "lastModified": 1650050473,
+        "narHash": "sha256-YIO8n6Y5XdtQbCaayAxzSRXL756O2nolhJyzINAZMa4=",
+        "ref": "refs/tags/5.7.0.17",
+        "rev": "1944c500e14f5f21fd190773bfb92605b718bb2d",
+        "revCount": 992,
         "submodules": true,
         "type": "git",
         "url": "https://github.com/aerospike/aerospike-server"
       },
       "original": {
-        "ref": "refs/tags/5.7.0.10",
+        "ref": "refs/tags/5.7.0.17",
         "submodules": true,
         "type": "git",
         "url": "https://github.com/aerospike/aerospike-server"

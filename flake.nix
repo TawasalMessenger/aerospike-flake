@@ -22,7 +22,7 @@
       type = "git";
       url = "https://github.com/aerospike/aerospike-server";
       submodules = true;
-      ref = "refs/tags/5.7.0.10";
+      ref = "refs/tags/5.7.0.17";
       flake = false;
     };
   };
