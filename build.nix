@@ -39,7 +39,7 @@ in
 
     src = admin-src;
 
-    buildInputs = [ bcrypt cryptography jsonschema pexpect ply pyasn1 pyopenssl toml yappi future distro enum34 ];
+    buildInputs = [ bcrypt cryptography dateutil jsonschema pexpect ply pyasn1 pyopenssl toml yappi future distro enum34 ];
     propagatedBuildInputs = buildInputs;
 
     doCheck = false;
